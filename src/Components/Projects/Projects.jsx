@@ -6,7 +6,7 @@ import ProjectCard2 from "./ProjectCard2";
 const Projects = () => {
   return (
     <div id="Projects" className="p-10 md:p-24  text-white ">
-     <h1 className="text-2xl md:text-4xl text-white font-bold inline-block pb-2 border-b-4 border-transparent transition-all duration-300 hover:text-blue-400">
+     <h1 className="text-2xl md:text-4xl text-white font-bold inline-block pb-2 border-b-4 border-transparent transition-all duration-300 text-yellow-200">
   Projects
 </h1>
 

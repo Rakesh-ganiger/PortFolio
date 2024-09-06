@@ -26,7 +26,7 @@ const Footer = () => {
   return (
     <>
     <div id="ContactForm" className=" text-white p-8 md:p-16 rounded-lg shadow-md max-w-4xl mx-auto mb-10">
-      <h2 className="text-2xl md:text-4xl font-bold text-center pb-6 hover:text-blue-400">Contact me</h2>
+      <h2 className="text-2xl md:text-4xl font-bold text-center pb-6 text-blue-400">Contact me</h2>
 
       {/* Form Structure */}
       <form className="space-y-4" ref={form} onSubmit={sendEmail}>
@@ -36,7 +36,7 @@ const Footer = () => {
           <input 
             type="text" 
             id="name" 
-            className="w-full p-3 border border-gray-300 rounded-lg text-black" 
+            className="w-full p-3 border border-gray-300 rounded-lg text-white bg-slate-900" 
             placeholder="Enter your name" 
             name="your_name"
           />
@@ -48,7 +48,7 @@ const Footer = () => {
           <input 
             type="email" 
             id="email" 
-            className="w-full p-3 border border-gray-300 rounded-lg text-black" 
+            className="w-full p-3 border border-gray-300 rounded-lg text-white bg-slate-900" 
             placeholder="Enter your email" 
             name='your-email'
           />
@@ -60,7 +60,7 @@ const Footer = () => {
           <textarea 
             id="message" 
             rows="5" 
-            className="w-full p-3 border border-gray-300 rounded-lg text-black" 
+            className="w-full p-3 border border-gray-300 rounded-lg text-white bg-slate-900" 
             placeholder="Write your message..." 
             name='message'
           />

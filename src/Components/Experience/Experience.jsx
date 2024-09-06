@@ -1,70 +1,10 @@
-// import React from 'react';
-// import {FaCss3,FaFigma,FaHtml5,FaJs,FaReact,FaGit,FaJava,FaGithub } from "react-icons/fa"
-// import { SiMongodb, SiTailwindcss, SiMysql,} from 'react-icons/si';
-
-
-// const Experience = () => {
-//   return (
-//     <div id="Experience" className='p-10 md:p-24 '>
-//         <h1 className='text-2xl md:text-4xl  text-white font-bold '>Skills</h1>
-        
-//         <div className='flex flex-wrap items-center justify-around'>
-//             <div className='flex flex-wrap md:w-2/5 gap-8 md:p-12 py-10'>
-//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
-//                 <FaHtml5 color="#E34F26" size={80}/>
-//             </span>
-//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
-//                 <FaCss3 color="#1572b6" size={80}/>
-//             </span>
-//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
-//                 <FaFigma color="#F24E1E" size={80}/>
-//             </span>
-//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
-//                 <FaJs color="#F7DF1E" size={80}/>
-//             </span>
-//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
-//                 <FaReact color="#61DAFB" size={80}/>
-//             </span>
-//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
-//                 <SiMongodb color="#47A248" size={80}/>
-//             </span>
-//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
-//                 <FaGit color="#F05032" size={80}/>
-//             </span><span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
-//                 <SiTailwindcss color="#06B6D4 " size={80}/>
-//             </span>
-//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
-//                 <SiMysql color="#61DAFB" size={80}/>
-//             </span>
-//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
-//                 <FaGithub color="#181717" size={80}/>
-//             </span>
-//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
-//                 <FaJava color="#007396" size={80}/>
-//             </span>
-
-//             </div>
-            
-//         </div>
-
-//     </div>
-//   )
-// }
-
-// export default Experience;
-
-
-
-
-
 import React from 'react';
-import { FaCss3, FaFigma, FaHtml5, FaJs, FaReact, FaGit, FaJava, FaGithub } from "react-icons/fa";
+import { FaCss3, FaHtml5, FaJs, FaReact, FaGit, FaJava, FaGithub } from "react-icons/fa";
 import { SiMongodb, SiTailwindcss, SiMysql } from 'react-icons/si';
 
 const skills = [
   { icon: <FaHtml5 color="#E34F26" size={80} />, name: "HTML5" },
   { icon: <FaCss3 color="#1572b6" size={80} />, name: "CSS3" },
-  { icon: <FaFigma color="#F24E1E" size={80} />, name: "Figma" },
   { icon: <FaJs color="#F7DF1E" size={80} />, name: "JavaScript" },
   { icon: <FaReact color="#61DAFB" size={80} />, name: "React" },
   { icon: <SiMongodb color="#47A248" size={80} />, name: "MongoDB" },
@@ -78,7 +18,7 @@ const skills = [
 const Experience = () => {
   return (
     <div id="Experience" className='p-10 md:p-24'>
-      <h1 className='text-2xl md:text-4xl text-white font-bold mb-8 hover:text-blue-400'>Skills</h1>
+      <h1 className='text-2xl md:text-4xl  font-bold mb-8 text-green-300'>Skills</h1>
       <div className='flex flex-wrap  items-center justify-center gap-8'>
         {skills.map((skill, index) => (
           <div
@@ -203,5 +143,59 @@ export default Experience;
 //     </div>
 //   );
 // };
+
+// export default Experience;
+// import React from 'react';
+// import {FaCss3,FaFigma,FaHtml5,FaJs,FaReact,FaGit,FaJava,FaGithub } from "react-icons/fa"
+// import { SiMongodb, SiTailwindcss, SiMysql,} from 'react-icons/si';
+
+
+// const Experience = () => {
+//   return (
+//     <div id="Experience" className='p-10 md:p-24 '>
+//         <h1 className='text-2xl md:text-4xl  text-white font-bold '>Skills</h1>
+        
+//         <div className='flex flex-wrap items-center justify-around'>
+//             <div className='flex flex-wrap md:w-2/5 gap-8 md:p-12 py-10'>
+//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
+//                 <FaHtml5 color="#E34F26" size={80}/>
+//             </span>
+//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
+//                 <FaCss3 color="#1572b6" size={80}/>
+//             </span>
+//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
+//                 <FaFigma color="#F24E1E" size={80}/>
+//             </span>
+//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
+//                 <FaJs color="#F7DF1E" size={80}/>
+//             </span>
+//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
+//                 <FaReact color="#61DAFB" size={80}/>
+//             </span>
+//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
+//                 <SiMongodb color="#47A248" size={80}/>
+//             </span>
+//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
+//                 <FaGit color="#F05032" size={80}/>
+//             </span><span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
+//                 <SiTailwindcss color="#06B6D4 " size={80}/>
+//             </span>
+//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
+//                 <SiMysql color="#61DAFB" size={80}/>
+//             </span>
+//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
+//                 <FaGithub color="#181717" size={80}/>
+//             </span>
+//             <span className='p-3 bg-zinc-950 flex items-center rounded-2xl'>
+//                 <FaJava color="#007396" size={80}/>
+//             </span>
+
+//             </div>
+            
+//         </div>
+
+//     </div>
+//   )
+// }
 
 // export default Experience;

@@ -17,32 +17,28 @@ const About = () => {
 
             <div className='md:flex flex-wrap flex-col md:flex-row gap-6 items-center'>
             {/* <img className="md:h-60 rounded-full border-4 shadow-lg transition-all duration-300 hover:scale-105 border-blue-500" src={img} alt="" /> */}
-            <img className="md:h-60 rounded-full border-4 shadow-lg border-blue-500 
+            <img className="md:h-80 rounded-full border-4 shadow-lg border-blue-500 
                     transition-all duration-300 hover:scale-105 hover:shadow-2xl 
                     hover:shadow-blue-500/50 hover:border-blue-700 
                     animate-pulse"
             src={img} alt="" />
             <ul>
-                <div className='flex gap-3 py-4'>
+                <div className='flex gap-2 py-4'>
                 <IoArrowForward size={30} className="mt-1"/>
                     <span className='w-96'>
-                        <h1 className='text-xl md:text-2xl font-semibold leading-normal'>Front end developer</h1>
+                        <h1 className='text-xl md:text-2xl font-semibold leading-normal'>Front End Developer</h1>
                             <p className='text-sm md:text-md leading-tight '>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Fugiat eius non in repellat eligendi 
-                        repellendus officiis rerum totam nisi aliquam natus fuga iure, tempora quibusdam.
+                               Passionate about creating responsive and visually appealing user interfaces using React, HTML5, CSS3, and JavaScript. Skilled in developing dynamic web applications with modern frontend tools like Tailwind CSS. Committed to improving user experience through optimized, scalable, and interactive designs.
                             </p>
                     </span>
                 </div>
 
-                <div className='flex gap-3 py-4'>
+                <div className='flex gap-2 py-4'>
                 <IoArrowForward size={30} className="mt-1"/>
                     <span className='w-96'>
-                        <h1 className='text-xl md:text-2xl font-semibold leading-normal'>jAVA developer</h1>
+                        <h1 className='text-xl md:text-2xl font-semibold leading-normal'>Java Developer</h1>
                             <p className='text-sm md:text-md leading-tight '>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                        Fugiat eius non in repellat eligendi 
-                        repellendus officiis rerum totam nisi aliquam natus fuga iure, tempora quibusdam.
+                            Strong foundation in Java programming, with experience in building robust backend systems. Familiar with OOP principles, data structures, and algorithms. Eager to contribute to backend development tasks, ensuring efficient application performance and smooth integration with frontend components.
                             </p>
                     </span>
                 </div>
