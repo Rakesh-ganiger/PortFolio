@@ -100,7 +100,7 @@ const Home = () => {
       </div>
 
       {/* Right Section (Image) */}
-      <div className="w-full md:w-2/4 flex justify-center items-center mt-10 md:mt-0">
+      <div className="w-full md:w-2/4 flex justify-center items-center mt-3 md:mt-0">
         <img
           className="w-40 md:w-80 rounded-full border-4 shadow-lg border-blue-500 
                      transition-all duration-300 hover:scale-105 hover:shadow-2xl 
