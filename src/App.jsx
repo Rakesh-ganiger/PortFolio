@@ -9,6 +9,7 @@ function App() {
   
 
   return (
+    <div className="font-sans">
     <div className="bg-[#171d32] h-auto w-full overflow-hidden"> 
     <Navbar/>
     <Home/>
@@ -16,6 +17,7 @@ function App() {
     <Experience/>
     <Projects/>
     <Footer/>
+    </div>
     </div>
     
   )

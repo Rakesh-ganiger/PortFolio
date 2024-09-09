@@ -12,8 +12,8 @@ const About = () => {
         <div>
         <h2 className="text-2xl md:text-4xl text-white font-bold inline-block pb-2  transition-all duration-300 hover:text-blue-400">
           About
-      </h2>
-      <br />
+        </h2>
+        <br />
 
             <div className='md:flex flex-wrap flex-col md:flex-row gap-6 items-center'>
             {/* <img className="md:h-60 rounded-full border-4 shadow-lg transition-all duration-300 hover:scale-105 border-blue-500" src={img} alt="" /> */}
