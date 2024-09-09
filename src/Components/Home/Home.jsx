@@ -74,35 +74,76 @@
 
 // export default Home;
 
+// import React from "react";
+// import TextChange from "../TextChange";
+// import avatarImg from "../../assets/2b50e03e-4947-47b3-8449-95a9aa9f5ecd.jpg";
+// import resume from "../../assets/Rakesh_107.pdf"; // Import the PDF file
+
+// const Home = () => {
+//   // Store the resume link in a variable
+//   const resumeLink= "https://drive.google.com/file/d/1Dhuv-bEFCOUqmoHrMBlFYZsqMmutn1YS/view?usp=sharing"
+
+//   return (
+//     <div className="text-white flex flex-col md:flex-row w-full h-screen justify-between items-center p-10 md:p-20">
+//       <div className="md:w-2/4 md:pt-10 flex flex-col items-center md:items-start space-y-4">
+//         <h1 className="text-xl md:text-6xl font-bold flex leading-normal tracking-tighter text-center md:text-left">
+//           <TextChange />
+//         </h1>
+//         <p className="text-sm md:text-lg flex tracking-tight mt-2 text-center md:text-left">
+//           Recently graduated student seeking opportunities as a Frontend or Java Developer. With solid skills in front-end technologies, Java, and a strong problem-solving mindset, I'm eager to contribute to impactful projects and grow in a dynamic team.
+//         </p>
+//         <a href={resumeLink} download="resumeLink">
+//           <button className="mt-3 md:mt-10 text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
+//             Resume
+//           </button>
+//         </a>
+//       </div>
+//       <div className="w-full md:w-2/4 flex justify-center items-center mt-8 md:mt-0">
+//         <img 
+//           className="w-120 max-w-xs md:max-w-md md:h-80 rounded-full border-4 shadow-lg border-blue-500 
+//                      transition-all duration-300 hover:scale-105 hover:shadow-2xl 
+//                      hover:shadow-blue-400/50 hover:border-blue-400 
+//                      object-cover md:ml:0" 
+//           src={avatarImg} 
+//           alt="Avatar" 
+//         />
+//       </div>
+//     </div>
+//   );
+// };
+
+// export default Home;
+
+
 import React from "react";
 import TextChange from "../TextChange";
 import avatarImg from "../../assets/2b50e03e-4947-47b3-8449-95a9aa9f5ecd.jpg";
 import resume from "../../assets/Rakesh_107.pdf";
 
 const Home = () => {
-  const resumeLink = resume;
+  const resumeLink = "https://drive.google.com/file/d/1Dhuv-bEFCOUqmoHrMBlFYZsqMmutn1YS/view?usp=sharing";
 
   return (
-    <div className="text-white flex flex-col md:flex-row w-full h-screen justify-between items-center p-10 md:p-20">
+    <div className="text-white flex flex-col md:flex-row w-full h-screen justify-between items-center p-5 md:p-20">
       {/* Left Section */}
-      <div className="md:w-2/4 md:pt-10 flex flex-col items-center md:items-start space-y-4">
-        <h1 className="text-xl md:text-6xl font-bold flex leading-normal tracking-tighter text-center md:text-left">
+      <div className="md:w-2/4 md:pt-10 flex flex-col items-center md:items-start space-y-6">
+        <h1 className="text-2xl md:text-6xl font-bold leading-normal tracking-tighter text-center md:text-left">
           <TextChange />
         </h1>
-        <p className="text-sm md:text-lg flex tracking-tight mt-2 text-center md:text-left">
+        <p className="text-sm md:text-lg tracking-tight text-center md:text-left">
           Recently graduated student seeking opportunities as a Frontend or Java Developer. With solid skills in front-end technologies, Java, and a strong problem-solving mindset, I'm eager to contribute to impactful projects and grow in a dynamic team.
         </p>
         <a href={resumeLink} download>
-          <button className="mt-3 md:mt-10 text-white py-2 px-3 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
+          <button className="mt-5 text-white py-2 px-4 text-sm md:text-lg md:py-2 md:px-4 hover:opacity-85 duration-300 hover:scale-105 font-semibold rounded-3xl bg-[#465697]">
             Resume
           </button>
         </a>
       </div>
 
       {/* Right Section (Image) */}
-      <div className="w-full md:w-2/4 flex justify-center items-center mt- md:mt-0">
+      <div className="w-full md:w-2/4 flex justify-center items-center mt-6 md:mt-0">
         <img
-          className="w-40 md:w-80 rounded-full border-4 shadow-lg border-blue-500 
+          className="w-48 h-48 md:w-80 md:h-80 rounded-full border-4 shadow-lg border-blue-500 
                      transition-all duration-300 hover:scale-105 hover:shadow-2xl 
                      hover:shadow-blue-400/50 hover:border-blue-400 object-cover"
           src={avatarImg}
