@@ -6,6 +6,8 @@
 *{
     scroll-behavior: smooth;
     font-family: 'Arial',sans-serif;
+    background-color:"bg-gradient-to-t from-slate-950 to-slate-900";
+
     
 }
 
