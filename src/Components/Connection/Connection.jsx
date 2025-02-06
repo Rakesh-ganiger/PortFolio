@@ -2,7 +2,7 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 
-const Contact = () => {
+const Connection = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
@@ -78,4 +78,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Connection;
