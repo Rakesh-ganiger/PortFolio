@@ -1,11 +1,12 @@
 import About from "./Components/About/About"
 
-import Contact from "./Components/contact/Contact"
+import Contact from "./Components/Contact/Contact"
 import Home from "./Components/Home/Home"
 import Navbar from "./Components/Navbar/Navbar"
 import Projects from "./Components/Projects/Projects"
-import Footer from "./Components/footer/Footer"
+
 import Skills from "./Components/Skills/Skills"
+import End from "./Components/End/End"
 
 function App() {
   
@@ -19,7 +20,7 @@ function App() {
     <Skills/>
     <Projects/>
     <Contact/>
-    <Footer/>
+    <End/>
     </div>
     </div>
     

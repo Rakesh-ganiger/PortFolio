@@ -8,7 +8,7 @@ const socialMediaWrapper = `flex justify-center items-center gap-5`;
 const socialMediaIcon = `hover:text-cyan-400 text-2xl`;
 const copyright = `mb-5 text-light text-amber-500 flex flex-col md:flex-row md:gap-3 justify-center items-center`;
 
-function Footer() {
+function End() {
   return (
     <footer id="Footer" className={footerContainer}>
       <div className={footerWrapper}>
@@ -32,4 +32,4 @@ function Footer() {
   );
 }
 
-export default Footer;
+export default End;
