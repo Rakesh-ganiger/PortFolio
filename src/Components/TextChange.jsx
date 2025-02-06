@@ -1,4 +1,4 @@
-import React from "react";
+
 import { useState, useEffect } from "react";
 const TextChange = () => {
   const texts = ["Hi, I'm Rakesh", "Front End Developer", "Hi,Problem Solver"];

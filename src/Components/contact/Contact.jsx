@@ -2,7 +2,6 @@ import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
 
-
 const Contact = () => {
   const form = useRef();
 
@@ -25,8 +24,8 @@ const Contact = () => {
       );
   };
 
-  return (<>
-    <div id="ContactForm" className="text-white p-8 md:p-16 bg-gray-900 rounded-lg shadow-md max-w-4xl mx-auto mb-10">
+  return (
+    <div id="ContactForm" className="text-white p-8 md:p-16 rounded-lg shadow-md max-w-4xl mx-auto mb-10">
       <h2 className="text-2xl md:text-4xl font-bold text-center pb-6 text-blue-400">Contact me</h2>
 
       <form className="space-y-4" ref={form} onSubmit={sendEmail}>
@@ -76,8 +75,6 @@ const Contact = () => {
         </div>
       </form>
     </div>
-    
-    </>
   );
 };
 
