@@ -1,5 +1,5 @@
 import React from "react";
-
+import { FaGithub, FaEye } from "react-icons/fa";
 import { projects } from "../../data/Projects.js";
 
 // Mapping skill names to icon URLs
@@ -26,11 +26,12 @@ const skillsIcons = {
   Firebase:
     "https://upload.wikimedia.org/wikipedia/commons/3/37/Firebase_Logo.svg",
   TMDB: "https://upload.wikimedia.org/wikipedia/commons/3/3a/The_Movie_Database_%28TMDb%29_logo.svg",
-
   Redux: "https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png",
   "Socket.io":
     "https://upload.wikimedia.org/wikipedia/commons/9/96/Socket-io.svg",
 };
+
+const fallbackIcon = "https://via.placeholder.com/20"; // Fallback image URL
 
 const container =
   "bg-gradient-to-t from-slate-950 to-slate-900 text-gray-100 py-20 lg:px-10 px-5";
@@ -51,8 +52,14 @@ const skillWrapper = "flex flex-wrap gap-2";
 // Removed background gradient from skills; now just simple padding.
 const skillStyle = "px-2 py-1 text-sm text-gray-950 rounded";
 const btnWrapper = "flex justify-between gap-4";
+
+// GitHub button style: gradient background, flex layout with icon on the left.
 const btnStyle =
-  "bg-gradient-to-r from-cyan-500 to-blue-500 shadow hover:shadow-cyan-400 duration-500 rounded-lg text-gray-950 lg:py-3 lg:px-5 px-4 py-2";
+  "bg-gradient-to-r from-cyan-500 to-blue-500 shadow hover:shadow-cyan-400 duration-500 rounded-lg lg:py-3 lg:px-5 px-4 py-2 flex items-center gap-2 text-white";
+
+// Live demo button style: natural style with border and hover effect.
+const liveBtnStyle =
+  "p-2 rounded border border-gray-400 hover:bg-gray-700 transition-colors flex items-center gap-2";
 
 function Projects() {
   // Helper function to shorten descriptions
@@ -81,10 +88,10 @@ function Projects() {
               </div>
               {/* Render skills as icons */}
               <div className={skillWrapper}>
-                {item.skills.map((skill, index) => {
+                {item.skills.map((skill, idx) => {
                   const iconUrl = skillsIcons[skill] || null;
                   return (
-                    <div className={skillStyle} key={index}>
+                    <div className={skillStyle} key={idx}>
                       {iconUrl ? (
                         <img
                           src={iconUrl}
@@ -92,7 +99,7 @@ function Projects() {
                           title={skill}
                           className="h-5 w-auto"
                           onError={(e) => {
-                            e.target.onerror = null; // Prevent infinite loop if fallback fails
+                            e.target.onerror = null;
                             e.target.src = fallbackIcon;
                           }}
                         />
@@ -108,20 +115,33 @@ function Projects() {
                 {getShortDesc(item.desc, 150)}
               </p>
               <div className={btnWrapper}>
-                <button className={btnStyle}>
-                  <a href={item.live} target="_blank" rel="noreferrer">
-                    Live Demo
-                  </a>
-                </button>
-                <button className={btnStyle}>
-                  <a
-                    href={item.code || item.github}
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    Github Repo
-                  </a>
-                </button>
+                {/* Conditionally render Live Demo button */}
+                <div className="flex items-center gap-4">
+                  {item.live && (
+                    <button className="p-2 rounded border border-gray-400 hover:bg-gray-700 transition-colors flex items-center gap-2">
+                      <a
+                        href={item.live}
+                        target="_blank"
+                        rel="noreferrer"
+                        className="flex items-center gap-2"
+                      >
+                        <FaEye size={20} className="text-white" />
+                        {/* <span className="text-white">Live Demo</span> */}
+                      </a>
+                    </button>
+                  )}
+                  <button className="p-2 rounded border border-gray-400 hover:bg-gray-700 transition-colors flex items-center gap-2">
+                    <a
+                      href={item.code || item.github}
+                      target="_blank"
+                      rel="noreferrer"
+                      className="flex items-center gap-2"
+                    >
+                      <FaGithub size={20} className="text-white" />
+                      {/* <span className="text-white">Github Repo</span> */}
+                    </a>
+                  </button>
+                </div>
               </div>
             </div>
           ))}
