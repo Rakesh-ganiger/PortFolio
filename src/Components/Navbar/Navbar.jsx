@@ -1,100 +1,3 @@
-// import { RiCloseLine, RiMenu2Line } from "react-icons/ri";
-// import { useState } from "react";
-// import { FaBars } from "react-icons/fa";
-
-// const Navbar = () => {
-//   const [menuOpen, setMenuOpen] = useState(false);
-
-//   const resume =
-//     "https://drive.google.com/file/d/1Dhuv-bEFCOUqmoHrMBlFYZsqMmutn1YS/view?usp=sharing";
-
-//   return (
-//     <nav className="fixed top-0 left-0 w-full bg-slate-800 bg-opacity-90 text-white px-10 py-4 md:px-20 z-50 flex justify-between items-center shadow-md">
-//       {/* Logo */}
-//       <a href="#">
-//         <span className="text-2xl cursor-pointer font-semibold tracking-wide">
-//           Rakesh Ganiger
-//         </span>
-//       </a>
-
-//       {/* Navbar Links (Desktop & Mobile) */}
-//       <div className="flex items-center">
-//         <ul
-//           className={`absolute top-16 left-0 w-full bg-black bg-opacity-90 md:bg-transparent md:static md:flex md:gap-6 md:w-auto md:top-auto md:left-auto text-center transition-transform transform ${
-//             menuOpen
-//               ? "translate-y-0 opacity-100"
-//               : "-translate-y-full opacity-0 md:opacity-100 md:translate-y-0"
-//           } duration-300 ease-in-out md:flex-row flex flex-col items-center`}
-//         >
-//           <li className="py-2 md:py-0">
-//             <a
-//               href="#About"
-//               className="text-xl block px-4 py-2 hover:text-gray-300 transition-all"
-//             >
-//               About
-//             </a>
-//           </li>
-//           <li className="py-2 md:py-0">
-//             <a
-//               href="#Skills"
-//               className="text-xl block px-4 py-2 hover:text-gray-300 transition-all"
-//             >
-//               Skills
-//             </a>
-//           </li>
-//           <li className="py-2 md:py-0">
-//             <a
-//               href="#Projects"
-//               className="text-xl block px-4 py-2 hover:text-gray-300 transition-all"
-//             >
-//               Projects
-//             </a>
-//           </li>
-//           <li className="py-2 md:py-0">
-//             <a
-//               href="#ContactForm"
-//               className="text-xl block px-4 py-2 hover:text-gray-300 transition-all"
-//             >
-//               Contact
-//             </a>
-//           </li>
-//         </ul>
-
-//         {/* Resume Button (Corrected Alignment) */}
-//         <a
-//           href={resume}
-//           target="_blank"
-//           rel="noopener noreferrer"
-//           className="hidden md:inline-block"
-//         >
-//           <button className="ml-6 py-2 px-6 text-lg font-semibold rounded-lg bg-gradient-to-r from-cyan-500 to-blue-500 hover:bg-blue-700 transition duration-300">
-//             Resume
-//           </button>
-//         </a>
-//       </div>
-
-//       {/* Mobile Menu Icon */}
-//       <div className="md:hidden absolute right-10 top-4 z-50">
-//         {menuOpen ? (
-//           <RiCloseLine
-//             size={30}
-//             className="cursor-pointer transition-all duration-300"
-//             onClick={() => setMenuOpen(false)}
-//           />
-//         ) : (
-//           <RiMenu2Line
-//             size={30}
-//             className="cursor-pointer transition-all duration-300"
-//             onClick={() => setMenuOpen(true)}
-//           />
-//         )}
-//       </div>
-//     </nav>
-//   );
-// };
-
-// export default Navbar;
-
 import { RiCloseLine } from "react-icons/ri";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
@@ -102,8 +5,8 @@ import { useState } from "react";
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  const resume =
-    "https://drive.google.com/file/d/1Dhuv-bEFCOUqmoHrMBlFYZsqMmutn1YS/view?usp=sharing";
+  const resume ="https://drive.google.com/file/d/17yR1OHF2Gyi3un94ulBDtKdCCm3A4ASS/view?usp=sharing"
+    
 
   return (
     <nav className="fixed top-0 left-0 w-full bg-slate-800 bg-opacity-90 text-white px-10 py-4 md:px-20 z-50 flex justify-between items-center shadow-md">
